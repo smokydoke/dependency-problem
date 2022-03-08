@@ -3,15 +3,17 @@ Dependency management can cause huge headaches for teams as they troubleshoot an
 
 # Task
 Enhance the existing `/dependency` endpoint in the node server to check version conflicts in transient dependencies. The endpoint should, at a minimum, take in two package names and their versions (i.e. package_a at version_a, package_b at version_b). The endpoint should return a list of dependency conflict tuples containing package name and conflicting versions: `[dependency_package_name, version_for_a, version_for_b]`. Conflicts should be determined by dependency version mismatches between package_a and package_b. 
-## For Non NodeJS / TypeScript Solutions
 
+# Instructions
+Fork this repository to write your solution in. As you work please make use of commits (frequency, message, etc) as you would when working in any professional or Open Source project. When your submission is complete open a Pull Request against the original repository and send a link to your pull request to the email provided. 
+
+## For Non NodeJS / TypeScript Solutions
 Although this solution is in TypeScript and NodeJS we do allow submitting solutions in other languages (although strongly recommend doing it by extending this repository using TypeScript). That being said, if you do choose to use a different language please make sure that there is a clear documentation on how to install dependencies, configure the system and run the solution in the readme file as if you are explaining to someone that never used the stack that you are submitting the solution with.
 
 ## Tech Stack
 The project is currently set up with a relatively vanilla NodeJS + Express server using TypeScript. For those not familiar with TypeScript you can make the project able to support normal JavaScript by tweaking some settings in [tsconfig.json](./tsconfig.json)
 
 ## Prerequisites
-
 * [Node v16 LTS](https://nodejs.org/en/download/)
 
 ## Getting Started
